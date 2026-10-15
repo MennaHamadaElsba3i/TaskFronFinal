@@ -87,3 +87,21 @@ tbody tr.selected { background: rgba(109,124,255,.12); }
   .grid-3, .grid-4 { grid-template-columns: 1fr 1fr; }
   .span-2 { grid-column: span 2; }
 }
+
+.sortable-th {
+  cursor: pointer;
+  user-select: none;
+  transition: color .15s;
+}
+.sortable-th:hover {
+  color: var(--text);
+}
+.sort-indicator {
+  color: var(--accent);
+  font-size: 10px;
+  margin-left: 4px;
+}
+input.input-error {
+  border-color: var(--danger) !important;
+  box-shadow: 0 0 0 2px rgba(251,113,133,.25) !important;
+}
